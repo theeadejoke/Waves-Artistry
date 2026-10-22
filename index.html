@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><link rel="icon" href="assets/logo.png"><title>Waves Artistry Beauty Therapy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--sf:#fff;--tx:#1b1a17;--mu:#85807a;--gd:#a67c00;--ln:#e8e5df;--er:#a33a2f;--ok:#3d6b45;--ink:#1b1a17;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121110;--sf:#121110;--tx:#f2efe9;--mu:#948f87;--ln:#2d2a26;--gd:#d4a62a;--er:#e58b80;--ok:#8fc097;--ink:#f2efe9;color-scheme:dark}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:300 16px/1.7 Jost,system-ui,sans-serif;letter-spacing:.01em}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.08;margin:0 0 .6em;letter-spacing:-.01em}h1{font-size:clamp(2.8rem,8vw,5.2rem)}h2{font-size:2.1rem}h3{font-size:1.35rem}
+a{color:inherit}.w{max-width:960px;margin:0 auto;padding:0 24px}
+header.t{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:14px 24px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--ln)}
+header.t img{height:38px;width:38px}header.t strong{font:400 1.05rem 'Cormorant Garamond',serif!important;letter-spacing:.04em;line-height:1.2}header.t nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav a{padding:6px 10px;text-decoration:none;font-size:.92rem;color:var(--mu)}nav a.on,nav a:hover{color:var(--tx);box-shadow:inset 0 -1px var(--gd)}
+.b{display:inline-block;background:var(--ink);color:var(--bg);border:1px solid var(--ink);border-radius:0;padding:12px 26px;font:400 .95rem Jost,sans-serif;letter-spacing:.04em;cursor:pointer;text-decoration:none}
+.b.o{background:none;color:var(--tx);border-color:var(--ln)}.b.o:hover{border-color:var(--tx)}.b.s{padding:6px 14px;font-size:.85rem}.b:disabled{opacity:.4}
+.hero{padding:96px 0 72px;display:grid;gap:40px;grid-template-columns:1fr;align-items:center}.hero img{width:min(150px,40vw);justify-self:center;opacity:.9}.hero p{max-width:30ch;font-size:1.1rem}
+@media(min-width:760px){.hero{grid-template-columns:1.6fr 1fr}}
+.g{display:grid;gap:36px 28px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.c{background:none;border:0;border-top:1px solid var(--ln);padding:16px 0 0;border-radius:0}.mu{color:var(--mu)}.pr{color:var(--gd)}
+section{padding:40px 0}footer{border-top:1px solid var(--ln);padding:28px 0;margin-top:48px;color:var(--mu);font-size:.85rem}
+label{display:block;font-size:.82rem;margin:14px 0 4px;color:var(--mu)}
+input,select,textarea{width:100%;padding:10px 0;border:0;border-bottom:1px solid var(--ln);border-radius:0;background:none;color:var(--tx);font:inherit}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--tx)}
+input[type=checkbox]{width:auto;margin-right:8px}.row{display:flex;gap:18px;flex-wrap:wrap}.row>*{flex:1;min-width:120px}
+.sl{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}.sl button{padding:8px 14px;border:1px solid var(--ln);background:none;color:var(--tx);border-radius:0;cursor:pointer;font:inherit}.sl button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.dash{display:grid;gap:28px;padding-top:28px}@media(min-width:800px){.dash{grid-template-columns:160px 1fr}}
+.side{display:flex;gap:2px;flex-wrap:wrap}@media(min-width:800px){.side{flex-direction:column;flex-wrap:nowrap}}
+.side button{background:none;border:0;border-left:1px solid var(--ln);text-align:left;padding:8px 14px;color:var(--mu);font:inherit;cursor:pointer}.side button.on{color:var(--tx);border-color:var(--gd)}
+.kp{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:20px 0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}.kp .c{border:0;padding:16px 12px 16px 0}.kp .c b{display:block;font:400 1.8rem 'Cormorant Garamond',serif}
+.tb{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.9rem}th{font-weight:400;color:var(--mu)}th,td{padding:10px 12px 10px 0;border-bottom:1px solid var(--ln);text-align:left;white-space:nowrap}tr.k{cursor:pointer}tr.k:hover td{background:#8881}
+.tg{font-size:.8rem;color:var(--mu)}.paid,.completed,.confirmed{color:var(--ok)}.unpaid,.cancelled,.noshow{color:var(--er)}
+.bk{position:fixed;inset:0;background:#000a;display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:24px 10px;z-index:20}.md{background:var(--bg);width:min(660px,100%);padding:28px;border:1px solid var(--ln)}
+#t{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:10px 18px;z-index:30;display:none;max-width:90vw}#t.er{background:var(--er);color:#fff}
+.nt{border-left:1px solid var(--gd);padding:4px 14px;margin:14px 0;font-size:.9rem;color:var(--mu)}
+</style></head><body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script><script src="config.js"></script><script src="backend.js"></script>
+<div id="app"></div><div id="m"></div><div id="t" role="status"></div>
+<script>
+const LOGO="assets/logo.png";
+const $=s=>document.querySelector(s),E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const N=n=>'₦'+(Math.round(+n||0)).toLocaleString('en-NG'),td=()=>new Date().toLocaleDateString('en-CA'),uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const toM=s=>{const[a,b]=s.split(':');return+a*60+ +b},fm=m=>String(m/60|0).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
+let db=null,user=null,staff=false,uidv='',S={svc:[],cus:[],tx:[],ap:[],cfg:{}},V='home',tab='ov',D=td(),Q='',F='',B={},L=[],busy=false,R={a:td().slice(0,8)+'01',b:td()};
+const cfg=()=>S.cfg,meth=()=>(cfg().methods||'Cash,Bank transfer,Card,Other').split(',').map(x=>x.trim()).filter(Boolean);
+const act=s=>S.svc.filter(x=>x.active!==false);
+function toast(t,er){const x=$('#t');x.textContent=t;x.className=er?'er':'';x.style.display='block';clearTimeout(toast.h);toast.h=setTimeout(()=>x.style.display='none',3800)}
+function modal(h){$('#m').innerHTML='<div class="bk" onclick="if(event.target==this)cm()"><div class="md" role="dialog">'+h+'</div></div>'}function cm(){$('#m').innerHTML=''}
+async function init(){
+ try{if(window.claude){user=await claude.use('user');db=await claude.use('db')}}catch(x){}
+ try{if(user){staff=(await user.canEdit())||(await user.can('data.write'))===true;uidv=await user.id()}}catch(x){}
+ if(db){['svc','cus','tx','ap'].forEach(k=>db.collection(k).onSnapshot(s=>{S[k]=s.docs.map(d=>({id:d.id,...d.data()}));draw(1)},()=>{}));db.doc('cfg/biz').onSnapshot(s=>{S.cfg=s.data()||{};draw(1)},()=>{})}
+ onhashchange();}
+window.onhashchange=()=>{V=location.hash.slice(1)||'home';draw()};
+function draw(soft){if(soft&&/INPUT|SELECT|TEXTAREA/.test((document.activeElement||{}).tagName||''))return;
+ const a=['home','services','book','contact'],isD=V==='app';
+ $('#app').innerHTML=`<header class="t"><a href="#home"><img src="${LOGO}" alt="Waves Artistry logo"></a><strong style="font-family:'Cormorant Garamond',serif;font-size:1.2rem">Waves Artistry<br><span class="mu" style="font-size:.8rem;font-weight:400">Beauty Therapy</span></strong><nav>${a.map(x=>`<a href="#${x}" class="${V==x?'on':''}">${{home:'Home',services:'Services',book:'Book',contact:'Contact'}[x]}</a>`).join('')}${staff?`<a href="#app" class="${isD?'on':''}">Dashboard</a>`:''}</nav></header><main class="w">${isD?dashV():V=='services'?svcV():V=='book'?bookV():V=='contact'?contactV():homeV()}</main><footer><div class="w">© Waves Artistry Beauty Therapy. Customer details are used only for bookings and, if you opt in, promotional emails. <a href="#login">Staff sign in</a> · <a href="#logout">Sign out</a></div></footer>`;
+ if(V=='book')sl();}
+/* ---------- public ---------- */
+function homeV(){const f=act().slice(0,3),cats=[...new Set(act().map(s=>s.cat))];
+ return `<div class="hero"><div><h1>Considered beauty care.</h1><p class="mu">Hair, nails and spa treatments.</p><a class="b" href="#book">Book an Appointment</a> <a class="b o" href="#services">View Our Services</a></div><img src="${LOGO}" alt=""></div>
+ ${f.length?`<section><h2>Popular services</h2><div class="g">${f.map(card).join('')}</div></section>`:''}
+ ${cats.length?`<section><h2>Categories</h2><div class="row">${cats.map(c=>`<a class="b o s" href="#services">${E(c)}</a>`).join('')}</div></section>`:''}
+ <section><h2>Visit us</h2>${info()}</section>`}
+function card(s){return `<div class="c"><h3>${E(s.name)}</h3><p class="mu">${E(s.desc||'')}</p><p><span class="pr">${s.fromp?'From ':''}${N(s.price)}</span> · ${s.dur} min</p><button class="b s" onclick="B.sid='${s.id}';location.hash='book'">Book</button></div>`}
+function info(){const c=cfg(),w=(c.whatsapp||'').replace(/\D/g,'');return `<div class="c"><p><b>Address:</b> ${E(c.address||'Add in Business Settings')}</p><p><b>Opening hours:</b> ${E(c.hours||'Add in Business Settings')}</p><p><b>Phone:</b> ${E(c.phone||'Add in Business Settings')} ${c.phone?`<a href="tel:${E(c.phone)}">Call</a>`:''}</p><p><b>Email:</b> ${E(c.email||'Add in Business Settings')}</p><p>${w?`<a class="b s" href="https://wa.me/${w}">WhatsApp us</a> `:''}${c.insta?`<a href="${E(c.insta)}">Instagram</a>`:''}</p></div>`}
+function contactV(){return `<section><h2>Contact</h2>${info()}</section>`}
+function svcV(){const cats=[...new Set(act().map(s=>s.cat))];return `<section><h2>Services & pricing</h2>${cats.length?cats.map(c=>`<h3 style="margin-top:20px">${E(c)}</h3><div class="g">${act().filter(s=>s.cat==c).map(card).join('')}</div>`).join(''):'<p class="mu">Services will appear here once the owner adds them in the dashboard.</p>'}<p class="mu">Prices marked "From" vary with style, length or complexity.</p></section>`}
+function slotsFor(date,dur){const o=toM(cfg().open||'09:00'),c=toM(cfg().close||'18:00'),r=[],n=new Date(),nm=n.getHours()*60+n.getMinutes();
+ for(let t=o;t+dur<=c;t+=30){if(date==td()&&t<=nm)continue;if(!S.ap.some(a=>a.date==date&&!['cancelled','noshow'].includes(a.status)&&t<a.start+a.dur&&a.start<t+dur))r.push(t)}return r}
+function bookV(){const s=S.svc.find(x=>x.id==B.sid);
+ if(!db||!staff)return `<section><h2>Book an appointment</h2><div class="nt">Online self-booking is not switched on yet. Please contact us by phone or WhatsApp.</div>${info()}</section>`;
+ return `<section><h2>Book an appointment</h2><div style="max-width:520px"><label>Service</label><select onchange="B.sid=this.value;B.slot=null;draw()"><option value="">Choose a service</option>${act().map(x=>`<option value="${x.id}" ${x.id==B.sid?'selected':''}>${E(x.name)} – ${N(x.price)}</option>`).join('')}</select>
+ <label>Date</label><input type="date" min="${td()}" value="${B.date||''}" onchange="B.date=this.value;B.slot=null;sl()">
+ <label>Available times</label><div class="sl" id="sl"></div>
+ <label>Full name</label><input value="${E(B.name||'')}" oninput="B.name=this.value" autocomplete="name"><label>Email</label><input type="email" value="${E(B.email||'')}" oninput="B.email=this.value" autocomplete="email"><label>Phone</label><input type="tel" value="${E(B.phone||'')}" oninput="B.phone=this.value" autocomplete="tel">
+ <label style="margin-top:14px"><input type="checkbox" ${B.mkt?'checked':''} onchange="B.mkt=this.checked">Optional: I agree to receive promotional emails from Waves Artistry. I can unsubscribe at any time.</label>
+ <div class="nt" id="rv">${s&&B.date&&B.slot!=null?`${E(s.name)} · ${B.date} at ${fm(B.slot)} · ${s.fromp?'from ':''}${N(s.price)} · ${s.dur} min`:'Choose a service, date and time to review your booking.'}</div>
+ <button class="b" id="bb" onclick="submitBook()">Submit booking</button></div></section>`}
+function sl(){const s=S.svc.find(x=>x.id==B.sid),el=$('#sl');if(!el)return;if(!s||!B.date){el.innerHTML='<span class="mu">Select a service and date first.</span>';return}
+ const r=slotsFor(B.date,s.dur);el.innerHTML=r.length?r.map(t=>`<button class="${B.slot===t?'on':''}" onclick="B.slot=${t};draw()">${fm(t)}</button>`).join(''):'<span class="mu">No times available on this date.</span>'}
+async function findOrMakeCus(o){const em=(o.email||'').trim().toLowerCase(),ph=(o.phone||'').replace(/\s/g,'');
+ let c=S.cus.find(x=>(em&&(x.email||'').toLowerCase()==em)||(ph&&(x.phone||'').replace(/\s/g,'')==ph));if(c)return c;
+ c={id:uid(),name:o.name.trim(),email:em,phone:ph,reg:td(),mkt:!!o.mkt,mktAt:o.mkt?new Date().toISOString():null,mktSrc:o.mkt?o.src:null,unsub:null,src:o.src};
+ await db.collection('cus').doc(c.id).set(c);return c}
+async function submitBook(){if(busy)return;const s=S.svc.find(x=>x.id==B.sid);
+ if(!s||!B.date||B.slot==null)return toast('Choose a service, date and time.',1);if(!(B.name||'').trim())return toast('Enter your name.',1);
+ if(!/^\S+@\S+\.\S+$/.test(B.email||'')&&!(B.phone||'').trim())return toast('Enter a valid email or a phone number.',1);
+ if(!slotsFor(B.date,s.dur).includes(B.slot)){B.slot=null;draw();return toast('That time was just taken. Please choose another.',1)}
+ busy=1;$('#bb').disabled=true;
+ try{const c=await findOrMakeCus({...B,src:'website'});const a={id:uid(),cid:c.id,cname:c.name,phone:c.phone,email:c.email,sid:s.id,sname:s.name,price:s.price,date:B.date,start:B.slot,dur:s.dur,status:'pending',src:staff?'staff':'website',created:new Date().toISOString()};
+ await db.collection('ap').doc(a.id).set(a);B={};busy=0;draw();toast('Booking request received. It is pending confirmation. Email confirmations are not enabled yet, so we will confirm by phone or WhatsApp.')}
+ catch(x){busy=0;draw();toast('Could not save the booking. Please try again or contact us.',1)}}
+/* ---------- dashboard ---------- */
+const tot=a=>({n:a.length,ch:a.reduce((s,x)=>s+x.total,0),pd:a.reduce((s,x)=>s+x.paid,0),bal:a.reduce((s,x)=>s+x.bal,0)});
+function dashV(){if(!staff)return '<section><h2>Staff area</h2><p class="mu">Sign in to claude.ai with an account that has edit access to open the dashboard.</p></section>';
+ const T=[['ov','Overview'],['dy','Daily Records'],['ap','Appointments'],['cu','Customers'],['sv','Services & Pricing'],['rp','Reports'],['st','Business Settings']];
+ return `<div class="dash"><div class="side">${T.map(t=>`<button class="${tab==t[0]?'on':''}" onclick="tab='${t[0]}';Q='';F='';draw()">${t[1]}</button>`).join('')}</div><div>${{ov:ovV,dy:dyV,ap:apV,cu:cuV,sv:svV,rp:rpV,st:stV}[tab]()}</div></div>`}
+function kp(a){return `<div class="kp">${a.map(x=>`<div class="c"><span class="mu">${x[0]}</span><b>${x[1]}</b></div>`).join('')}</div>`}
+function ovV(){const t=tot(S.tx.filter(x=>x.date==td())),ap=S.ap.filter(x=>x.date==td()),out=S.tx.reduce((s,x)=>s+x.bal,0);
+ return `<h2>Overview</h2><p><button class="b s" onclick="openRec()">Record a Service</button> <button class="b o s" onclick="cuForm()">Register customer</button> <button class="b o s" onclick="location.hash='book'">New appointment</button></p>
+ ${kp([['Services today',t.n],['Charges today',N(t.ch)],['Payments received today',N(t.pd)],['Outstanding (all time)',N(out)],['Appointments today',ap.length],['Completed today',ap.filter(x=>x.status=='completed').length],['Pending confirmation',S.ap.filter(x=>x.status=='pending').length]])}
+ <h3>Recent transactions</h3>${txTable([...S.tx].sort((a,b)=>b.created>a.created?1:-1).slice(0,6))}`}
+function txTable(a){return a.length?`<div class="tb"><table><tr><th>Date</th><th>Customer</th><th>Services</th><th>Charged</th><th>Paid</th><th>Balance</th><th>Status</th><th>Method</th><th>Staff</th></tr>${a.map(x=>`<tr class="k" onclick="txOpen('${x.id}')"><td>${x.date}</td><td>${E(x.cname)}</td><td>${E(x.lines.map(l=>l.name+(l.q>1?' ×'+l.q:'')).join(', '))}</td><td>${N(x.total)}</td><td>${N(x.paid)}</td><td>${N(x.bal)}</td><td><span class="tg ${x.status}">${x.status}</span></td><td>${E(x.method||'')}</td><td>${E(x.staff||'')}</td></tr>`).join('')}</table></div>`:'<p class="mu">No services recorded for this selection.</p>'}
+function dyV(){let a=S.tx.filter(x=>x.date==D);const t=tot(a);const q=Q.toLowerCase();a=a.filter(x=>(!q||(x.cname+' '+x.lines.map(l=>l.name).join(' ')).toLowerCase().includes(q))&&(!F||x.status==F));
+ const bm={};S.tx.filter(x=>x.date==D).forEach(x=>{if(x.paid>0)bm[x.method]=(bm[x.method]||0)+x.paid});
+ return `<h2>Daily Records</h2><div class="row" style="align-items:end"><div><label>Date</label><input type="date" value="${D}" onchange="D=this.value||td();draw()"></div><div><label>Search</label><input value="${E(Q)}" placeholder="Customer or service" oninput="Q=this.value;$('#dl').innerHTML=dlist()"></div><div><label>Payment status</label><select onchange="F=this.value;draw()"><option value="">All</option>${['paid','partial','unpaid'].map(s=>`<option ${F==s?'selected':''}>${s}</option>`).join('')}</select></div><div><button class="b" onclick="openRec()">Record a Service</button></div></div>
+ ${kp([['Transactions',t.n],['Total charges',N(t.ch)],['Payments received',N(t.pd)],['Outstanding',N(t.bal)]])}<p class="mu">${Object.entries(bm).map(([k,v])=>k+': '+N(v)).join(' · ')}</p><div id="dl">${txTable(a)}</div>`}
+function dlist(){const q=Q.toLowerCase();return txTable(S.tx.filter(x=>x.date==D&&(!q||(x.cname+' '+x.lines.map(l=>l.name).join(' ')).toLowerCase().includes(q))&&(!F||x.status==F)))}
+function openRec(pre){pre=pre||{};L=[{sid:pre.sid||'',q:1,p:pre.sid?(S.svc.find(x=>x.id==pre.sid)||{}).price||0:0}];
+ modal(`<h3>Record a Service</h3><label>Date</label><input type="date" id="rd" value="${D}"><label>Customer</label><select id="rc" onchange="$('#nc').style.display=this.value=='_new'?'block':'none'"><option value="">Select customer</option>${[...S.cus].sort((a,b)=>a.name.localeCompare(b.name)).map(c=>`<option value="${c.id}" ${c.id==pre.cid?'selected':''}>${E(c.name)} ${E(c.phone)}</option>`).join('')}<option value="_new">+ New customer</option></select>
+ <div id="nc" style="display:none"><div class="row"><input id="nn" placeholder="Full name"><input id="np" placeholder="Phone"><input id="ne" placeholder="Email (optional)"></div></div>
+ <label>Services</label><div id="ln"></div><button class="b o s" onclick="L.push({sid:'',q:1,p:0});lnDraw()">+ Add service</button>
+ <div class="row"><div><label>Discount (₦)</label><input type="number" min="0" id="dc" value="0" oninput="calc()"></div><div><label>Amount paid (₦)</label><input type="number" min="0" id="pdv" value="0" oninput="calc()"></div></div>
+ <div class="nt" id="cl"></div><div class="row"><div><label>Payment method</label><select id="pm">${meth().map(m=>`<option>${E(m)}</option>`).join('')}</select></div><div><label>Staff member</label><input id="sf"></div></div><label>Notes</label><textarea id="nt" rows="2"></textarea>
+ <p style="margin-top:14px"><button class="b" id="sv" onclick="saveTx('${pre.apid||''}')">Save</button> <button class="b o" onclick="cm()">Cancel</button></p>`);lnDraw()}
+function lnDraw(){$('#ln').innerHTML=L.map((l,i)=>`<div class="row" style="margin-bottom:6px"><select style="flex:3" onchange="L[${i}].sid=this.value;L[${i}].p=(S.svc.find(x=>x.id==this.value)||{}).price||0;lnDraw()"><option value="">Service</option>${act().map(s=>`<option value="${s.id}" ${s.id==l.sid?'selected':''}>${E(s.name)}</option>`).join('')}</select><input type="number" min="1" value="${l.q}" style="flex:.7" oninput="L[${i}].q=+this.value;calc()"><input type="number" min="0" value="${l.p}" style="flex:1.2" aria-label="Price charged" oninput="L[${i}].p=+this.value;calc()">${L.length>1?`<button class="b o s" style="flex:0" onclick="L.splice(${i},1);lnDraw()">✕</button>`:''}</div>`).join('');calc()}
+function calc(){const sub=L.reduce((s,l)=>s+(l.q||0)*(l.p||0),0),dc=+$('#dc').value||0,tt=sub-dc,pd=+$('#pdv').value||0;$('#cl').innerHTML=`Subtotal ${N(sub)} · Total charged <b>${N(tt)}</b> · Paid ${N(pd)} · Outstanding <b>${N(tt-pd)}</b>`}
+const stat=(t,p)=>p<=0&&t>0?'unpaid':p>=t?'paid':'partial';
+async function saveTx(apid){if(busy)return;let cid=$('#rc').value,c;const date=$('#rd').value;
+ if(!date)return toast('Choose a date.',1);if(!cid)return toast('Select a customer.',1);
+ const ls=L.filter(l=>l.sid);if(!ls.length)return toast('Add at least one service.',1);if(ls.some(l=>!(l.q>=1)||!(l.p>=0)))return toast('Check quantities and prices.',1);
+ const sub=ls.reduce((s,l)=>s+l.q*l.p,0),dc=+$('#dc').value||0,pd=+$('#pdv').value||0;
+ if(dc<0||dc>sub)return toast('Discount cannot exceed the subtotal.',1);if(pd<0||pd>sub-dc)return toast('Amount paid cannot exceed the total charged.',1);
+ busy=1;$('#sv').disabled=true;
+ try{if(cid=='_new'){if(!$('#nn').value.trim()||!($('#np').value.trim()||$('#ne').value.trim())){busy=0;$('#sv').disabled=false;return toast('New customer needs a name and a phone or email.',1)}
+  c=await findOrMakeCus({name:$('#nn').value,phone:$('#np').value,email:$('#ne').value,src:'staff'})}else c=S.cus.find(x=>x.id==cid);
+ const tt=sub-dc,x={id:uid(),date,cid:c.id,cname:c.name,apid:apid||null,lines:ls.map(l=>{const s=S.svc.find(y=>y.id==l.sid);return{sid:l.sid,name:s.name,cat:s.cat,price:l.p,q:l.q,total:l.p*l.q}}),sub,disc:dc,total:tt,paid:pd,bal:tt-pd,status:stat(tt,pd),method:$('#pm').value,staff:$('#sf').value.trim(),notes:$('#nt').value.trim(),created:new Date().toISOString(),log:[{t:new Date().toISOString(),by:uidv,w:'Created'}]};
+ await db.collection('tx').doc(x.id).set(x);if(apid)await db.collection('ap').doc(apid).update({status:'completed'});
+ busy=0;D=date;cm();draw();toast('Service record saved.')}catch(e){busy=0;$('#sv').disabled=false;toast('Could not save. Please try again.',1)}}
+function txOpen(i){const x=S.tx.find(y=>y.id==i);if(!x)return;
+ modal(`<h3>${E(x.cname)} · ${x.date}</h3><div class="tb"><table>${x.lines.map(l=>`<tr><td>${E(l.name)}</td><td>${l.q} × ${N(l.price)}</td><td>${N(l.total)}</td></tr>`).join('')}</table></div><p>Discount ${N(x.disc)} · Charged <b>${N(x.total)}</b> · Paid <b>${N(x.paid)}</b> · Outstanding <b>${N(x.bal)}</b> <span class="tg ${x.status}">${x.status}</span></p><p class="mu">${E(x.method||'')} ${x.staff?'· '+E(x.staff):''} ${E(x.notes||'')}</p>
+ ${x.bal>0?`<div class="row" style="align-items:end"><div><label>Record a payment (₦)</label><input type="number" min="0" max="${x.bal}" id="pp"></div><div><button class="b s" onclick="addPay('${x.id}')">Add payment</button></div></div>`:''}
+ <p class="mu" style="font-size:.85rem">Change log: ${(x.log||[]).map(l=>l.t.slice(0,16).replace('T',' ')+' '+E(l.w)).join(' · ')}</p><button class="b o" onclick="cm()">Close</button>`)}
+async function addPay(i){const x=S.tx.find(y=>y.id==i),p=+$('#pp').value;if(!(p>0)||p>x.bal)return toast('Enter an amount up to the outstanding balance.',1);
+ try{const pd=x.paid+p;await db.collection('tx').doc(i).update({paid:pd,bal:x.total-pd,status:stat(x.total,pd),log:[...(x.log||[]),{t:new Date().toISOString(),by:uidv,w:'Payment '+N(p)}]});cm();toast('Payment recorded.')}catch(e){toast('Could not save payment.',1)}}
+function apV(){const a=[...S.ap].filter(x=>!F||x.status==F).sort((p,q)=>(p.date+fm(p.start))>(q.date+fm(q.start))?1:-1);
+ return `<h2>Appointments</h2><p><button class="b s" onclick="location.hash='book'">New appointment</button> <select style="width:auto" onchange="F=this.value;draw()"><option value="">All statuses</option>${['pending','confirmed','completed','cancelled','noshow'].map(s=>`<option ${F==s?'selected':''}>${s}</option>`).join('')}</select></p>${a.length?`<div class="tb"><table><tr><th>Date</th><th>Time</th><th>Customer</th><th>Phone</th><th>Service</th><th>Status</th><th>Actions</th></tr>${a.map(x=>`<tr><td>${x.date}</td><td>${fm(x.start)}</td><td>${E(x.cname)}</td><td>${E(x.phone||'')}</td><td>${E(x.sname)}</td><td><span class="tg ${x.status}">${x.status}</span></td><td>${x.status=='pending'?`<button class="b s" onclick="setAp('${x.id}','confirmed')">Confirm</button> `:''}${['pending','confirmed'].includes(x.status)?`<button class="b o s" onclick="openRec({cid:'${x.cid}',sid:'${x.sid}',apid:'${x.id}'})">Complete</button> <button class="b o s" onclick="setAp('${x.id}','noshow')">No-show</button> <button class="b o s" onclick="setAp('${x.id}','cancelled')">Cancel</button>`:''}</td></tr>`).join('')}</table></div>`:'<p class="mu">No appointments yet.</p>'}`}
+async function setAp(i,s){try{await db.collection('ap').doc(i).update({status:s});toast('Appointment marked '+s+'.')}catch(e){toast('Could not update.',1)}}
+function cuV(){return `<h2>Customers</h2><p><button class="b s" onclick="cuForm()">Register customer</button></p><input placeholder="Search name, email or phone" value="${E(Q)}" oninput="Q=this.value;$('#cl2').innerHTML=cuList()"><div id="cl2">${cuList()}</div>`}
+function cuList(){const q=Q.toLowerCase(),a=S.cus.filter(c=>!q||(c.name+c.email+c.phone).toLowerCase().includes(q)).sort((x,y)=>x.name.localeCompare(y.name));
+ return a.length?`<div class="tb"><table><tr><th>Name</th><th>Phone</th><th>Email</th><th>Visits</th><th>Spent</th><th>Marketing</th></tr>${a.map(c=>{const t=S.tx.filter(x=>x.cid==c.id);return `<tr class="k" onclick="cuForm('${c.id}')"><td>${E(c.name)}${t.length>1?' <span class="tg">returning</span>':''}</td><td>${E(c.phone)}</td><td>${E(c.email)}</td><td>${t.length}</td><td>${N(t.reduce((s,x)=>s+x.paid,0))}</td><td>${c.mkt?'Subscribed':c.unsub?'Unsubscribed':'No'}</td></tr>`}).join('')}</table></div>`:'<p class="mu">No customers found.</p>'}
+function cuForm(i){const c=S.cus.find(x=>x.id==i)||{},t=S.tx.filter(x=>x.cid==i),ap=S.ap.filter(x=>x.cid==i);
+ modal(`<h3>${i?'Customer profile':'Register customer'}</h3><label>Full name</label><input id="cn" value="${E(c.name||'')}"><label>Phone</label><input id="cp" value="${E(c.phone||'')}"><label>Email</label><input id="ce" value="${E(c.email||'')}"><label><input type="checkbox" id="cm" ${c.mkt?'checked':''}>Agrees to receive promotional emails (only tick if the customer has said yes)</label>${i?`<p class="mu">Registered ${c.reg} · Total charged ${N(t.reduce((s,x)=>s+x.total,0))} · Paid ${N(t.reduce((s,x)=>s+x.paid,0))}</p><h3>History</h3>${ap.map(a=>`<div>${a.date} ${fm(a.start)} ${E(a.sname)} <span class="tg ${a.status}">${a.status}</span></div>`).join('')}${t.map(x=>`<div>${x.date} ${E(x.lines.map(l=>l.name).join(', '))} · ${N(x.total)} (paid ${N(x.paid)})</div>`).join('')||'<p class="mu">No recorded services yet.</p>'}`:''}
+ <p><button class="b" onclick="cuSave('${i||''}')">Save</button> <button class="b o" onclick="cm()">Close</button></p>`)}
+async function cuSave(i){const n=$('#cn').value.trim(),p=$('#cp').value.replace(/\s/g,''),e=$('#ce').value.trim().toLowerCase(),m=$('#cm').checked;
+ if(!n||(!p&&!e))return toast('Enter a name and a phone or email.',1);if(e&&!/^\S+@\S+\.\S+$/.test(e))return toast('Email looks invalid.',1);
+ const d=S.cus.find(x=>x.id!=i&&((e&&x.email==e)||(p&&x.phone==p)));if(d)return toast('A customer with that email or phone already exists: '+d.name,1);
+ try{const o=S.cus.find(x=>x.id==i);if(i){const u={name:n,phone:p,email:e,mkt:m};if(m&&!o.mkt){u.mktAt=new Date().toISOString();u.mktSrc='staff';u.unsub=null}if(!m&&o.mkt)u.unsub=new Date().toISOString();await db.collection('cus').doc(i).update(u)}
+ else{const x={id:uid(),name:n,phone:p,email:e,reg:td(),mkt:m,mktAt:m?new Date().toISOString():null,mktSrc:m?'staff':null,unsub:null,src:'staff'};await db.collection('cus').doc(x.id).set(x)}cm();toast('Customer saved.')}catch(x){toast('Could not save.',1)}}
+function svV(){return `<h2>Services & Pricing</h2><p><button class="b s" onclick="svForm()">Add service</button></p>${S.svc.length?`<div class="tb"><table><tr><th>Name</th><th>Category</th><th>Price</th><th>Min</th><th>Status</th></tr>${S.svc.map(s=>`<tr class="k" onclick="svForm('${s.id}')"><td>${E(s.name)}</td><td>${E(s.cat)}</td><td>${s.fromp?'from ':''}${N(s.price)}</td><td>${s.dur}</td><td>${s.active===false?'Inactive':'Active'}</td></tr>`).join('')}</table></div>`:'<p class="mu">No services yet. Add your first one.</p>'}<p class="mu">Changing a price never alters past transactions.</p>`}
+function svForm(i){const s=S.svc.find(x=>x.id==i)||{active:true,dur:60};modal(`<h3>${i?'Edit':'Add'} service</h3><label>Name</label><input id="sn" value="${E(s.name||'')}"><label>Category (type a new one or reuse)</label><input id="sc" list="cl3" value="${E(s.cat||'')}"><datalist id="cl3">${[...new Set(S.svc.map(x=>x.cat))].map(c=>`<option>${E(c)}</option>`).join('')}</datalist><label>Description</label><textarea id="sd" rows="2">${E(s.desc||'')}</textarea><div class="row"><div><label>Price (₦)</label><input type="number" min="0" id="sp" value="${s.price??''}"></div><div><label>Duration (minutes)</label><input type="number" min="15" step="5" id="su" value="${s.dur}"></div></div><label><input type="checkbox" id="sf2" ${s.fromp?'checked':''}>Starting price (varies with complexity)</label><label><input type="checkbox" id="sa" ${s.active!==false?'checked':''}>Available to book</label><p><button class="b" onclick="svSave('${i||''}')">Save</button> <button class="b o" onclick="cm()">Cancel</button></p>`)}
+async function svSave(i){const o={name:$('#sn').value.trim(),cat:$('#sc').value.trim(),desc:$('#sd').value.trim(),price:+$('#sp').value,dur:+$('#su').value,fromp:$('#sf2').checked,active:$('#sa').checked};
+ if(!o.name||!o.cat||!(o.price>=0)||$('#sp').value===''||!(o.dur>=15))return toast('Name, category, price and duration (15+ min) are required.',1);
+ try{const k=i||uid();await db.collection('svc').doc(k).set({id:k,...o});cm();toast('Service saved.')}catch(e){toast('Could not save.',1)}}
+function rpV(){const a=S.tx.filter(x=>x.date>=R.a&&x.date<=R.b),t=tot(a),bs={},bc={};a.forEach(x=>x.lines.forEach(l=>{bs[l.name]=bs[l.name]||{q:0,r:0};bs[l.name].q+=l.q;bs[l.name].r+=l.total;bc[l.cat]=(bc[l.cat]||0)+l.total}));
+ const ap={};S.ap.filter(x=>x.date>=R.a&&x.date<=R.b).forEach(x=>ap[x.status]=(ap[x.status]||0)+1);
+ return `<h2>Reports</h2><div class="row" style="align-items:end"><div><label>From</label><input type="date" value="${R.a}" onchange="R.a=this.value;draw()"></div><div><label>To</label><input type="date" value="${R.b}" onchange="R.b=this.value;draw()"></div><div><button class="b o" onclick="csv()">Export CSV</button></div></div>${kp([['Transactions',t.n],['Service charges',N(t.ch)],['Payments received',N(t.pd)],['Outstanding',N(t.bal)]])}<p class="mu">Charges are not profit; no expenses are tracked.</p><h3>By service</h3><div class="tb"><table><tr><th>Service</th><th>Times</th><th>Charged</th></tr>${Object.entries(bs).sort((x,y)=>y[1].r-x[1].r).map(([k,v])=>`<tr><td>${E(k)}</td><td>${v.q}</td><td>${N(v.r)}</td></tr>`).join('')}</table></div><h3>By category</h3><div class="tb"><table>${Object.entries(bc).map(([k,v])=>`<tr><td>${E(k)}</td><td>${N(v)}</td></tr>`).join('')}</table></div><p>Appointments: ${Object.entries(ap).map(([k,v])=>k+' '+v).join(' · ')||'none'} · New customers: ${S.cus.filter(c=>c.reg>=R.a&&c.reg<=R.b).length}</p>`}
+async function csv(){const d=await claude.use('downloads');if(!d)return toast('Downloads are not available here.',1);const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+ const r=[['Date','Customer','Services','Charged','Paid','Outstanding','Status','Method','Staff'].map(q).join(',')];S.tx.filter(x=>x.date>=R.a&&x.date<=R.b).forEach(x=>r.push([x.date,x.cname,x.lines.map(l=>l.name).join('; '),x.total,x.paid,x.bal,x.status,x.method,x.staff].map(q).join(',')));
+ try{await d.save({filename:`waves-records-${R.a}-to-${R.b}.csv`,data:r.join('\n')})}catch(e){}}
+function stV(){const c=cfg(),f=(k,l,p)=>`<label>${l}</label><input id="s_${k}" value="${E(c[k]||'')}" placeholder="${p||''}">`;
+ return `<h2>Business Settings</h2><div style="max-width:520px">${f('phone','Phone')}${f('whatsapp','WhatsApp number (with country code)','234…')}${f('email','Email')}${f('address','Address')}${f('hours','Opening hours (shown on site)','Mon–Sat 9am–6pm')}${f('insta','Instagram link')}<div class="row"><div><label>Booking opens</label><input type="time" id="s_open" value="${c.open||'09:00'}"></div><div><label>Booking closes</label><input type="time" id="s_close" value="${c.close||'18:00'}"></div></div>${f('methods','Payment methods (comma separated)','Cash, Bank transfer, Card, Other')}<p><button class="b" onclick="stSave()">Save settings</button></p><div class="nt">Email delivery and email campaigns are not set up yet, so no emails are sent.</div></div>`}
+async function stSave(){const o={};['phone','whatsapp','email','address','hours','insta','open','close','methods'].forEach(k=>o[k]=$('#s_'+k).value.trim());try{await db.doc('cfg/biz').set(o);toast('Settings saved.')}catch(e){toast('Could not save settings.',1)}}
+init();
+</script></body></html>
